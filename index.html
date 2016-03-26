@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title></title>
+  </head>
+  <body>
+    <div id="content"></div>
+
+    <!-- For production
+    <script src="https://fb.me/react-0.14.7.min.js"></script>
+    <script src="https://fb.me/react-dom-0.14.7.min.js"></script>
+    -->
+    <script src="https://fb.me/react-0.14.7.js"></script>
+    <script src="https://fb.me/react-dom-0.14.7.js"></script>
+    <script type="text/javascript" charset="utf-8">
+      var h = React.createElement;
+      var MyList = React.createClass({
+        render: function(){
+          var lis = this.props.data.map(function(text, idx){
+            return h('li', {key:idx }, text)
+          })
+          return (
+            h('ul', null, lis)
+          )
+        }
+      })
+      var HelloWorldBanner = React.createClass({
+        render: function(){
+          return (
+            h('div', null, 
+              h('h1', null, 'Hello World'),
+              h(MyList, {data:['hi','I am','Mozilla']})
+            )
+          )
+        }
+      })
+      ReactDOM.render(h(HelloWorldBanner), document.getElementById('content'))
+    </script>
+  </body>
+</html>
