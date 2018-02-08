@@ -8,6 +8,9 @@ These code is explained in this [blog post][post].
 
 **No installation required!** Just clone the repo (or download the files as zip) and open `index.html` in the browser
 
+## Other Examples
+* `other_examples/with_jsx`: The same example using JSX 
+
 ## Projects using Minimal React
 * [shinglyu/github-dashboard](https://shinglyu.github.io/github-dashboard/)
 * [yodalee/github-bbs](https://yodalee.github.io/github-bbs.html)
