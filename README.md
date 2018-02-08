@@ -10,6 +10,8 @@ These code is explained in this [blog post][post].
 
 ## Other Examples
 * `other_examples/with_jsx`: The same example using JSX 
+* `other_examples/third_party/third_party.html`: An example of using a 3rd party library
+* `other_examples/third_party/third_party_jsx.html`: An example of using a 3rd party library, with JSX
 
 ## Projects using Minimal React
 * [shinglyu/github-dashboard](https://shinglyu.github.io/github-dashboard/)
